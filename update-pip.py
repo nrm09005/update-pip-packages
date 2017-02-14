@@ -26,6 +26,6 @@ dists = sorted(dists, key=lambda s: s.lower())
 dists.insert(0, 'pip')  # let 'pip' be the first
 
 for dist_name in dists:
-    cmd = "sudo pip install {0} -U".format(dist_name)
+    cmd = "sudo pip3 install {0} -U".format(dist_name)
     print('#', cmd)
     os.system(cmd)
